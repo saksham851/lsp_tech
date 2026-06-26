@@ -8,7 +8,7 @@ export const blogPosts = [
     categoryColor: '#EA4B71',
     date: 'June 18, 2025',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=75',
     author: 'LSP Team',
   },
   {
@@ -19,7 +19,7 @@ export const blogPosts = [
     categoryColor: '#D52B1E',
     date: 'June 10, 2025',
     readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=75',
     author: 'LSP Team',
   },
   {
@@ -30,7 +30,7 @@ export const blogPosts = [
     categoryColor: '#10B981',
     date: 'May 29, 2025',
     readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=400&q=75',
     author: 'LSP Team',
   },
 ]

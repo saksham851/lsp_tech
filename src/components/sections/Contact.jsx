@@ -78,6 +78,7 @@ const Contact = () => {
                     <a
                       key={label}
                       href={href}
+                      aria-label={label}
                       className="w-10 h-10 glass rounded-xl flex items-center justify-center text-gray-mid hover:text-brand-red hover:border-brand-red/30 transition-all"
                     >
                       <Icon size={16} />
@@ -120,8 +121,9 @@ const Contact = () => {
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
-                        <label className="text-white/70 text-xs font-medium mb-1.5 block">Full Name *</label>
+                        <label htmlFor="contact-name" className="text-white/70 text-xs font-medium mb-1.5 block">Full Name *</label>
                         <input
+                          id="contact-name"
                           {...register('name', { required: 'Name is required' })}
                           placeholder="John Smith"
                           className={inputClass}
@@ -129,8 +131,9 @@ const Contact = () => {
                         {errors.name && <p className="text-brand-red text-xs mt-1">{errors.name.message}</p>}
                       </div>
                       <div>
-                        <label className="text-white/70 text-xs font-medium mb-1.5 block">Email Address *</label>
+                        <label htmlFor="contact-email" className="text-white/70 text-xs font-medium mb-1.5 block">Email Address *</label>
                         <input
+                          id="contact-email"
                           {...register('email', {
                             required: 'Email is required',
                             pattern: { value: /^\S+@\S+$/i, message: 'Invalid email' }
@@ -143,8 +146,9 @@ const Contact = () => {
                     </div>
 
                     <div>
-                      <label className="text-white/70 text-xs font-medium mb-1.5 block">Company Name</label>
+                      <label htmlFor="contact-company" className="text-white/70 text-xs font-medium mb-1.5 block">Company Name</label>
                       <input
+                        id="contact-company"
                         {...register('company')}
                         placeholder="Your Company Inc."
                         className={inputClass}
@@ -152,8 +156,8 @@ const Contact = () => {
                     </div>
 
                     <div>
-                      <label className="text-white/70 text-xs font-medium mb-1.5 block">Service Needed</label>
-                      <select {...register('service')} className={inputClass}>
+                      <label htmlFor="contact-service" className="text-white/70 text-xs font-medium mb-1.5 block">Service Needed</label>
+                      <select id="contact-service" {...register('service')} className={inputClass}>
                         <option value="" className="bg-dark-card">Select a service...</option>
                         <option value="software" className="bg-dark-card">Software Development</option>
                         <option value="web" className="bg-dark-card">Web Development</option>
@@ -167,8 +171,9 @@ const Contact = () => {
                     </div>
 
                     <div>
-                      <label className="text-white/70 text-xs font-medium mb-1.5 block">Tell us about your project *</label>
+                      <label htmlFor="contact-message" className="text-white/70 text-xs font-medium mb-1.5 block">Tell us about your project *</label>
                       <textarea
+                        id="contact-message"
                         {...register('message', { required: 'Please describe your project' })}
                         rows={5}
                         placeholder="What are you looking to build? What problem are you trying to solve? Any timeline or budget in mind?"

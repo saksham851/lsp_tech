@@ -17,8 +17,8 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
-        <Layout>
-          <Suspense fallback={<PageLoader />}>
+        <Suspense fallback={<PageLoader />}>
+          <Layout>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<AboutPage />} />
@@ -28,8 +28,8 @@ function App() {
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>
-          </Suspense>
-        </Layout>
+          </Layout>
+        </Suspense>
       </Router>
     </HelmetProvider>
   )
