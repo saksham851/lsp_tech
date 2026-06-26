@@ -83,12 +83,7 @@ const Hero = () => {
             </motion.div>
 
             {/* Main Heading */}
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="text-hero font-black text-white leading-none tracking-tight mb-6"
-            >
+            <h1 className="text-hero font-black text-white leading-none tracking-tight mb-6 animate-fade-in">
               Building{' '}
               <span className="relative">
                 <span className="text-gradient-red">Products.</span>
@@ -100,22 +95,17 @@ const Hero = () => {
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
-                  transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
                   className="absolute -bottom-2 left-0 right-0 h-1 bg-brand-red rounded-full origin-left"
                 />
               </span>
-            </motion.h1>
+            </h1>
 
             {/* Sub Heading */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl md:text-2xl text-white/60 max-w-2xl leading-relaxed mb-10"
-            >
+            <p className="text-xl md:text-2xl text-white/70 max-w-2xl leading-relaxed mb-10">
               We help small businesses grow with custom software, web apps, mobile applications,
               ERP systems, and intelligent workflow automation powered by n8n and AI.
-            </motion.p>
+            </p>
 
             {/* CTA Buttons */}
             <motion.div

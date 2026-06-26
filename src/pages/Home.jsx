@@ -1,19 +1,22 @@
 // src/pages/Home.jsx
+import { lazy, Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
 import Hero from '../components/sections/Hero'
 import About from '../components/sections/About'
 import WhyChoose from '../components/sections/WhyChoose'
 import Services from '../components/sections/Services'
-import Industries from '../components/sections/Industries'
-import Process from '../components/sections/Process'
-import Technologies from '../components/sections/Technologies'
-import Portfolio from '../components/sections/Portfolio'
-import Testimonials from '../components/sections/Testimonials'
-import Statistics from '../components/sections/Statistics'
-import Careers from '../components/sections/Careers'
-import Blog from '../components/sections/Blog'
-import FAQ from '../components/sections/FAQ'
-import Contact from '../components/sections/Contact'
+
+// Lazy loaded heavy sections below the fold
+const Industries = lazy(() => import('../components/sections/Industries'))
+const Process = lazy(() => import('../components/sections/Process'))
+const Technologies = lazy(() => import('../components/sections/Technologies'))
+const Portfolio = lazy(() => import('../components/sections/Portfolio'))
+const Testimonials = lazy(() => import('../components/sections/Testimonials'))
+const Statistics = lazy(() => import('../components/sections/Statistics'))
+const Careers = lazy(() => import('../components/sections/Careers'))
+const Blog = lazy(() => import('../components/sections/Blog'))
+const FAQ = lazy(() => import('../components/sections/FAQ'))
+const Contact = lazy(() => import('../components/sections/Contact'))
 
 const Home = () => {
   return (
@@ -32,16 +35,19 @@ const Home = () => {
       <About />
       <WhyChoose />
       <Services />
-      <Industries />
-      <Process />
-      <Technologies />
-      <Portfolio />
-      <Testimonials />
-      <Statistics />
-      <Careers />
-      <Blog />
-      <FAQ />
-      <Contact />
+
+      <Suspense fallback={<div className="py-24" />}>
+        <Industries />
+        <Process />
+        <Technologies />
+        <Portfolio />
+        <Testimonials />
+        <Statistics />
+        <Careers />
+        <Blog />
+        <FAQ />
+        <Contact />
+      </Suspense>
     </>
   )
 }
