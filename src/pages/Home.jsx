@@ -13,7 +13,6 @@ const Technologies = lazy(() => import('../components/sections/Technologies'))
 const Portfolio = lazy(() => import('../components/sections/Portfolio'))
 const Testimonials = lazy(() => import('../components/sections/Testimonials'))
 const Statistics = lazy(() => import('../components/sections/Statistics'))
-const Careers = lazy(() => import('../components/sections/Careers'))
 const Blog = lazy(() => import('../components/sections/Blog'))
 const FAQ = lazy(() => import('../components/sections/FAQ'))
 const Contact = lazy(() => import('../components/sections/Contact'))
@@ -22,13 +21,13 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>LSP Technologies Inc. — Building Products. Powering Possibilities.</title>
+        <title>DevBridge — GoHighLevel, Automation & Digital Growth Experts</title>
         <meta
           name="description"
-          content="LSP Technologies Inc. is a Canadian software company specializing in custom software, web development, mobile apps, ERP, AI solutions, and business automation with n8n. Rooted in Ontario. Built for the world."
+          content="DevBridge is your expert partner for GoHighLevel (GHL) setup, N8N, Make, Zapier automation, WordPress development, Shopify stores, and SEO. Scale your business with powerful systems."
         />
-        <meta name="keywords" content="software development Canada, ERP development Ontario, n8n automation, custom software Tillsonburg, mobile app development, AI solutions Canada" />
-        <link rel="canonical" href="https://lsptechnologies.com/" />
+        <meta name="keywords" content="GoHighLevel agency, GHL setup, N8N automation, Make Integromat, Zapier automation, WordPress development, Shopify store, SEO services, CRM automation" />
+        <link rel="canonical" href="https://devbridge.agency/" />
       </Helmet>
 
       <Hero />
@@ -43,7 +42,6 @@ const Home = () => {
         <Portfolio />
         <Testimonials />
         <Statistics />
-        <Careers />
         <Blog />
         <FAQ />
         <Contact />

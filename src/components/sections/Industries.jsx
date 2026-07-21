@@ -4,14 +4,14 @@ import { useScrollAnimation, staggerContainer, staggerItem } from '../../hooks/u
 import SectionHeader from '../ui/SectionHeader'
 
 const industries = [
-  { icon: '🏭', name: 'Manufacturing', desc: 'ERP, inventory & production management' },
-  { icon: '🏥', name: 'Healthcare', desc: 'Patient portals, clinic management systems' },
-  { icon: '🎓', name: 'Education', desc: 'LMS platforms, student information systems' },
-  { icon: '💳', name: 'Finance', desc: 'Fintech apps, payroll, accounting tools' },
-  { icon: '🛒', name: 'Retail', desc: 'E-commerce, POS, inventory automation' },
-  { icon: '🚚', name: 'Logistics', desc: 'Fleet management, supply chain software' },
-  { icon: '🏗️', name: 'Construction', desc: 'Project management, site tracking tools' },
-  { icon: '🏛️', name: 'Government', desc: 'Citizen portals, compliance systems' },
+  { icon: '🏢', name: 'Digital Agencies', desc: 'White-label GHL, client onboarding automations' },
+  { icon: '🛍️', name: 'E-commerce', desc: 'Shopify stores, cart abandonment, inventory sync' },
+  { icon: '🏥', name: 'Healthcare & Clinics', desc: 'Appointment reminders, patient intake funnels' },
+  { icon: '🎓', name: 'Course Creators', desc: 'Member areas, drip campaigns, Zapier hooks' },
+  { icon: '🏋️', name: 'Fitness & Gyms', desc: 'Lead generation funnels, trial booking systems' },
+  { icon: '🏠', name: 'Real Estate', desc: 'Property listing sites, buyer/seller lead nurture' },
+  { icon: '🛠️', name: 'Home Services', desc: 'Quote requests, review generation, dispatch sync' },
+  { icon: '⚖️', name: 'Legal Services', desc: 'Consultation booking, document automation' },
 ]
 
 const Industries = () => {
@@ -28,7 +28,7 @@ const Industries = () => {
           <SectionHeader
             tag="Industries"
             title="Sectors We Serve"
-            subtitle="We bring deep industry knowledge and technical expertise across 8+ verticals, delivering solutions that respect how each industry operates."
+            subtitle="We bring deep automation knowledge and GHL expertise across 8+ verticals, delivering systems that respect how your specific industry operates."
           />
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">

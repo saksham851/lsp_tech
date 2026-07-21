@@ -16,9 +16,8 @@ const PageLoader = () => {
           <div className="w-28 h-28 rounded-2xl overflow-hidden shadow-glow-red flex items-center justify-center bg-white/5">
             <img
               src={logo}
-              alt="LSP Technologies"
-              className="w-full h-full object-contain"
-              style={{ imageRendering: '-webkit-optimize-contrast' }}
+              alt="Freelance Portfolio"
+              className="w-full h-full object-contain p-2 filter drop-shadow-[0_0_15px_rgba(213,43,30,0.5)]"
             />
           </div>
           {/* Pulse rings */}
@@ -32,8 +31,7 @@ const PageLoader = () => {
           transition={{ delay: 0.25 }}
           className="text-center"
         >
-          <p className="text-white font-semibold text-lg tracking-wide">LSP Technologies</p>
-          <p className="text-gray-400 text-xs tracking-widest uppercase mt-0.5">Inc.</p>
+          <p className="text-white font-semibold text-lg tracking-wide">Freelance Portfolio</p>
         </motion.div>
 
         {/* Progress bar */}

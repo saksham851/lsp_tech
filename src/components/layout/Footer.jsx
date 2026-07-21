@@ -2,29 +2,29 @@
 import { Link } from 'react-router-dom'
 import { FiLinkedin, FiTwitter, FiFacebook, FiInstagram, FiGithub, FiArrowRight, FiMapPin, FiPhone, FiMail } from 'react-icons/fi'
 import { motion } from 'framer-motion'
-import logo from '../../assets/logo.webp'
+import logo from '../../assets/logo.png'
 
 const footerLinks = {
-  Company: [
-    { label: 'About Us', href: '/about' },
-    { label: 'Our Team', href: '/about#team' },
-    { label: 'Careers', href: '/careers' },
+  Quick_Links: [
+    { label: 'About Me', href: '/about' },
+    { label: 'My Services', href: '/services' },
+    { label: 'Portfolio', href: '/portfolio' },
     { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '/contact' },
   ],
   Services: [
-    { label: 'Software Development', href: '/services' },
-    { label: 'Web Development', href: '/services' },
-    { label: 'Mobile Applications', href: '/services' },
-    { label: 'Cloud Solutions', href: '/services' },
-    { label: 'AI Solutions', href: '/services' },
-    { label: 'Business Automation', href: '/services' },
+    { label: 'GoHighLevel (GHL)', href: '/services' },
+    { label: 'N8N Automation', href: '/services' },
+    { label: 'Make & Zapier', href: '/services' },
+    { label: 'WordPress Development', href: '/services' },
+    { label: 'Shopify Development', href: '/services' },
+    { label: 'SEO Services', href: '/services' },
   ],
   Resources: [
     { label: 'Portfolio', href: '/portfolio' },
     { label: 'Case Studies', href: '/portfolio' },
-    { label: 'Technology Stack', href: '/#technologies' },
     { label: 'FAQ', href: '/#faq' },
+    { label: 'Blog', href: '/blog' },
     { label: 'Privacy Policy', href: '#' },
     { label: 'Terms of Service', href: '#' },
   ],
@@ -46,8 +46,8 @@ const Footer = () => {
         <div className="container-max px-4 md:px-8 py-16">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-2">Ready to Build Something Great?</h3>
-              <p className="text-white/70 text-lg">Let's talk about your project. No pressure, just ideas.</p>
+              <h3 className="text-3xl font-bold text-white mb-2">Ready to Automate & Grow?</h3>
+              <p className="text-white/70 text-lg">Let's build your GHL setup, automation, or website. Let's talk!</p>
             </div>
             <Link
               to="/contact"
@@ -65,33 +65,29 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-5 group">
-              <div className="h-14 w-14 rounded-xl overflow-hidden shadow-glow-red flex items-center justify-center flex-shrink-0 bg-white/5 transition-transform duration-300 group-hover:scale-105">
-                <img src={logo} alt="LSP" className="w-full h-full object-contain" style={{ imageRendering: '-webkit-optimize-contrast' }} />
-              </div>
-              <div>
-                <div className="font-bold text-white text-lg leading-tight">LSP Technologies</div>
-                <div className="text-gray-mid text-xs">Inc.</div>
+              <div className="h-14 w-auto rounded-xl overflow-hidden shadow-glow-red flex items-center justify-center flex-shrink-0 bg-transparent transition-transform duration-300 group-hover:scale-105">
+                <img src={logo} alt="Freelance Portfolio" className="h-14 w-auto object-contain" style={{ imageRendering: '-webkit-optimize-contrast' }} />
               </div>
             </Link>
 
             <p className="text-gray-mid text-sm leading-relaxed max-w-xs mb-6">
-              Building products and powering possibilities for businesses across Canada and around the world.
-              Rooted in Ontario. Built for the world.
+              Freelance expert for GoHighLevel, N8N, Make, Zapier, WordPress, Shopify & SEO.
+              I bridge your business to digital success.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <a href="#" className="flex items-center gap-3 text-gray-mid text-sm hover:text-white transition-colors">
                 <FiMapPin className="text-brand-red flex-shrink-0" size={14} />
-                Tillsonburg, Ontario, Canada
+                Available Worldwide (Remote)
               </a>
-              <a href="tel:+1-519-000-0000" className="flex items-center gap-3 text-gray-mid text-sm hover:text-white transition-colors">
+              <a href="tel:+1-000-000-0000" className="flex items-center gap-3 text-gray-mid text-sm hover:text-white transition-colors">
                 <FiPhone className="text-brand-red flex-shrink-0" size={14} />
-                +1 (519) 000-0000
+                +1 (000) 000-0000
               </a>
-              <a href="mailto:hello@lsptechnologies.com" className="flex items-center gap-3 text-gray-mid text-sm hover:text-white transition-colors">
+              <a href="mailto:hello@freelancer.com" className="flex items-center gap-3 text-gray-mid text-sm hover:text-white transition-colors">
                 <FiMail className="text-brand-red flex-shrink-0" size={14} />
-                hello@lsptechnologies.com
+                hello@freelancer.com
               </a>
             </div>
 
@@ -135,11 +131,11 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-dark-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-mid text-sm">
-            © {new Date().getFullYear()} LSP Technologies Inc. All rights reserved.
+            © {new Date().getFullYear()} Freelance Portfolio. All rights reserved.
           </p>
           <div className="flex items-center gap-2 text-gray-mid text-sm">
-            <span>🍁</span>
-            <span>Proudly Canadian. Building for the World.</span>
+            <span>🌉</span>
+            <span>Bridging Business to Digital Success.</span>
           </div>
         </div>
       </div>

@@ -39,9 +39,9 @@ const Contact = () => {
           animate={inView ? 'visible' : 'hidden'}
         >
           <SectionHeader
-            tag="Contact Us"
+            tag="Contact Me"
             title="Let's Start Building"
-            subtitle="Tell us about your project. We'll get back to you within 24 hours with a detailed response."
+            subtitle="Tell me about your project. I'll get back to you within 24 hours with a detailed response."
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -50,9 +50,9 @@ const Contact = () => {
               {/* Contact info */}
               <div className="space-y-4">
                 {[
-                  { icon: FiMapPin, label: 'Office', value: 'Tillsonburg, Ontario, Canada' },
-                  { icon: FiPhone, label: 'Phone', value: '+1 (519) 000-0000' },
-                  { icon: FiMail, label: 'Email', value: 'hello@lsptechnologies.com' },
+                  { icon: FiMapPin, label: 'Location', value: 'Available Worldwide (Remote)' },
+                  { icon: FiPhone, label: 'Phone', value: '+1 (000) 000-0000' },
+                  { icon: FiMail, label: 'Email', value: 'hello@freelancer.com' },
                 ].map((info) => (
                   <div key={info.label} className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-brand-red/10 rounded-2xl flex items-center justify-center flex-shrink-0">
@@ -68,7 +68,7 @@ const Contact = () => {
 
               {/* Social Links */}
               <div>
-                <p className="text-gray-mid text-sm mb-4">Connect with us</p>
+                <p className="text-gray-mid text-sm mb-4">Connect with me</p>
                 <div className="flex gap-3">
                   {[
                     { icon: FiLinkedin, href: '#', label: 'LinkedIn' },
@@ -87,19 +87,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Google Map */}
-              <div className="rounded-3xl overflow-hidden border border-dark-border h-64">
-                <iframe
-                  title="LSP Technologies Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47037.44234!2d-80.7302!3d42.8592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef8a8f8b2a937%3A0x4021b3e4e2b75ef0!2sTillsonburg%2C%20ON!5e0!3m2!1sen!2sca!4v1234567890"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
+
             </motion.div>
 
             {/* Right: Form */}
@@ -115,7 +103,7 @@ const Contact = () => {
                       <span className="text-4xl">✅</span>
                     </div>
                     <h3 className="text-white font-bold text-xl mb-2">Message Sent!</h3>
-                    <p className="text-gray-mid">We'll get back to you within 24 hours. Looking forward to talking!</p>
+                    <p className="text-gray-mid">I'll get back to you within 24 hours. Looking forward to talking!</p>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
@@ -159,19 +147,21 @@ const Contact = () => {
                       <label htmlFor="contact-service" className="text-white/70 text-xs font-medium mb-1.5 block">Service Needed</label>
                       <select id="contact-service" {...register('service')} className={inputClass}>
                         <option value="" className="bg-dark-card">Select a service...</option>
-                        <option value="software" className="bg-dark-card">Software Development</option>
-                        <option value="web" className="bg-dark-card">Web Development</option>
-                        <option value="mobile" className="bg-dark-card">Mobile Application</option>
-                        <option value="erp" className="bg-dark-card">ERP / HRMS</option>
-                        <option value="automation" className="bg-dark-card">Business Automation (n8n)</option>
-                        <option value="ai" className="bg-dark-card">AI Solutions</option>
-                        <option value="cloud" className="bg-dark-card">Cloud Solutions</option>
+                        <option value="ghl" className="bg-dark-card">GoHighLevel (GHL) Setup</option>
+                        <option value="n8n" className="bg-dark-card">N8N Automation</option>
+                        <option value="make" className="bg-dark-card">Make (Integromat)</option>
+                        <option value="zapier" className="bg-dark-card">Zapier Automation</option>
+                        <option value="wordpress" className="bg-dark-card">WordPress Development</option>
+                        <option value="shopify" className="bg-dark-card">Shopify Development</option>
+                        <option value="seo" className="bg-dark-card">SEO Services</option>
+                        <option value="funnel" className="bg-dark-card">Sales Funnel Building</option>
+                        <option value="crm" className="bg-dark-card">CRM Setup & Management</option>
                         <option value="other" className="bg-dark-card">Other</option>
                       </select>
                     </div>
 
                     <div>
-                      <label htmlFor="contact-message" className="text-white/70 text-xs font-medium mb-1.5 block">Tell us about your project *</label>
+                      <label htmlFor="contact-message" className="text-white/70 text-xs font-medium mb-1.5 block">Tell me about your project *</label>
                       <textarea
                         id="contact-message"
                         {...register('message', { required: 'Please describe your project' })}
@@ -200,7 +190,7 @@ const Contact = () => {
                     </button>
 
                     <p className="text-gray-mid text-xs text-center">
-                      We typically respond within 24 hours on business days 🍁
+                      I typically respond within 24 hours on business days 🌉
                     </p>
                   </form>
                 )}

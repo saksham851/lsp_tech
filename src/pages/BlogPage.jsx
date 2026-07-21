@@ -6,8 +6,8 @@ import { motion } from 'framer-motion'
 const BlogPage = () => (
   <>
     <Helmet>
-      <title>Blog — LSP Technologies Inc.</title>
-      <meta name="description" content="Technology insights, automation tips, ERP guides, and AI articles from the LSP Technologies team. Built for business owners and tech leaders." />
+      <title>Blog | GHL, Automation & Digital Growth Insights</title>
+      <meta name="description" content="GoHighLevel tips, automation guides, WordPress, Shopify, SEO, and digital growth insights from your expert. Built for business owners." />
     </Helmet>
     <div className="pt-20 bg-dark section-padding">
       <div className="container-max text-center">

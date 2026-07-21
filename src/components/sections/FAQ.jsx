@@ -61,7 +61,7 @@ const FAQ = () => {
           <SectionHeader
             tag="FAQ"
             title="Frequently Asked Questions"
-            subtitle="Everything you need to know before starting a project with LSP Technologies."
+            subtitle="Everything you need to know before starting a project with me."
           />
 
           <div className="max-w-3xl mx-auto space-y-3">

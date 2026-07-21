@@ -7,8 +7,8 @@ import { motion } from 'framer-motion'
 const PortfolioPage = () => (
   <>
     <Helmet>
-      <title>Portfolio — LSP Technologies Inc.</title>
-      <meta name="description" content="Explore LSP Technologies project portfolio — ERP, web apps, mobile, automation, HRMS, payroll systems and more for clients across Canada." />
+      <title>Portfolio | My GHL, Automation & Web Projects</title>
+      <meta name="description" content="Explore my project portfolio — GoHighLevel funnels, N8N/Make/Zapier automations, WordPress sites, Shopify stores, and SEO campaigns for clients worldwide." />
     </Helmet>
     <div className="pt-20 bg-dark section-padding">
       <div className="container-max text-center">

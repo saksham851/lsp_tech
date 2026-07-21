@@ -5,18 +5,19 @@ import SectionHeader from '../ui/SectionHeader'
 import { FiTarget, FiEye, FiHeart, FiGlobe, FiUsers, FiAward } from 'react-icons/fi'
 
 const values = [
-  { icon: FiTarget, title: 'Innovation First', desc: 'We embrace new technologies and creative thinking to solve complex business problems.' },
-  { icon: FiHeart, title: 'Client Obsessed', desc: 'Your success is our success. We go above and beyond on every single project.' },
-  { icon: FiAward, title: 'Quality Standard', desc: 'We build with precision, following best practices that stand the test of time.' },
-  { icon: FiGlobe, title: 'Global Mindset', desc: 'Canadian roots, global delivery. We work across time zones, borders, and industries.' },
+  { icon: FiTarget, title: 'Innovation First', desc: 'I embrace new technologies and creative thinking to solve complex business problems.' },
+  { icon: FiHeart, title: 'Client Obsessed', desc: 'Your success is my success. I go above and beyond on every single project.' },
+  { icon: FiAward, title: 'Quality Standard', desc: 'I build with precision, following best practices that stand the test of time.' },
+  { icon: FiGlobe, title: 'Global Mindset', desc: 'Working remotely to deliver world-class automation and systems across time zones.' },
 ]
 
 const timeline = [
-  { year: '2018', title: 'Founded in Ontario', desc: 'LSP Technologies was founded in Tillsonburg, Ontario with a vision to help local businesses grow through technology.' },
-  { year: '2019', title: 'First 10 Clients', desc: 'Delivered our first batch of web and mobile projects for small businesses across Southern Ontario.' },
-  { year: '2021', title: 'ERP & Enterprise', desc: 'Expanded into ERP, HRMS, and Payroll systems for mid-sized manufacturing and logistics companies.' },
-  { year: '2023', title: 'Automation & AI', desc: 'Launched our Business Automation division, helping clients eliminate manual work with n8n and AI solutions.' },
-  { year: '2025', title: 'Global Reach', desc: 'Now serving 100+ clients in 10+ countries, with a fully remote team of 25+ engineers and designers.' },
+  { year: '2023', title: 'My Freelance Journey Began', desc: 'I started my freelance career with a vision to help businesses achieve digital success through automation.' },
+  { year: '2023', title: 'Mastering GoHighLevel', desc: 'Delivered my first GoHighLevel setups, funnels, and CRM configurations for agencies and local businesses.' },
+  { year: '2024', title: 'Diving into Automation', desc: 'Expanded my skillset into N8N, Make, and Zapier — helping clients eliminate manual work and save 100s of hours.' },
+  { year: '2024', title: 'Web & E-commerce', desc: 'Started building full WordPress and Shopify high-converting stores and business websites.' },
+  { year: '2025', title: 'SEO & Growth', desc: 'Added dedicated SEO services to help my clients rank higher, drive organic traffic, and grow revenue.' },
+  { year: '2026', title: 'Going Global', desc: 'Now serving clients worldwide as an independent expert specializing in GHL, automation, and digital growth.' },
 ]
 
 const About = () => {
@@ -31,9 +32,9 @@ const About = () => {
           animate={inView ? 'visible' : 'hidden'}
         >
           <SectionHeader
-            tag="Our Story"
-            title="Built on Trust. Driven by Technology."
-            subtitle="We are a Canadian technology company that genuinely cares about your business. We don't just build software — we build partnerships."
+            tag="My Story"
+            title="Built on Automation. Driven by Results."
+            subtitle="I am a freelance expert who genuinely cares about your business growth. I don't just set up tools — I build complete systems that scale."
           />
 
           {/* Mission & Vision */}
@@ -43,12 +44,11 @@ const About = () => {
                 <div className="w-12 h-12 bg-brand-red/10 rounded-2xl flex items-center justify-center">
                   <FiTarget className="text-brand-red" size={24} />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-white">My Mission</h3>
               </div>
               <p className="text-gray-mid leading-relaxed text-lg">
-                To empower small and medium businesses with enterprise-grade technology solutions that are
-                accessible, affordable, and built to scale. We believe every business — regardless of size —
-                deserves world-class software.
+                To empower businesses with powerful GoHighLevel setups, automation workflows, and digital systems
+                that are accessible, affordable, and built to scale as a solo partner. Every business deserves world-class digital infrastructure.
               </p>
             </motion.div>
 
@@ -57,12 +57,12 @@ const About = () => {
                 <div className="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center">
                   <FiEye className="text-blue-400" size={24} />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-white">My Vision</h3>
               </div>
               <p className="text-gray-mid leading-relaxed text-lg">
-                To become the most trusted technology partner for growing businesses in Canada and beyond —
-                recognized not just for the code we write, but for the transformation we enable in every
-                company we work with.
+                To become the most trusted freelance automation and digital growth partner for businesses worldwide —
+                recognized not just for the tools I set up, but for the transformation and revenue I enable
+                in every business I work with.
               </p>
             </motion.div>
           </div>
@@ -89,7 +89,7 @@ const About = () => {
 
           {/* Timeline */}
           <motion.div variants={fadeUp}>
-            <h3 className="text-2xl font-bold text-white text-center mb-12">Our Journey</h3>
+            <h3 className="text-2xl font-bold text-white text-center mb-12">My Journey</h3>
             <div className="relative">
               {/* Line */}
               <div className="absolute left-1/2 top-0 bottom-0 w-px bg-dark-border -translate-x-1/2 hidden md:block" />

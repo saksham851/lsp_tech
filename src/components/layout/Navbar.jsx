@@ -3,14 +3,13 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiMenu, FiX, FiArrowRight } from 'react-icons/fi'
-import logo from '../../assets/logo.webp'
+import logo from '../../assets/logo.png'
 
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
   { label: 'Portfolio', href: '/portfolio' },
-  { label: 'Careers', href: '/careers' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]
@@ -52,12 +51,12 @@ const Navbar = () => {
         <div className="container-max px-4 md:px-8 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="h-12 md:h-14 w-12 md:w-14 rounded-xl overflow-hidden shadow-glow-red transition-transform duration-300 group-hover:scale-105 flex items-center justify-center bg-white/5">
-              <img src={logo} alt="LSP" className="w-full h-full object-contain" style={{ imageRendering: '-webkit-optimize-contrast' }} />
+            <div className="h-12 md:h-14 w-auto rounded-xl overflow-hidden shadow-glow-red transition-transform duration-300 group-hover:scale-105 flex items-center justify-center bg-transparent">
+              <img src={logo} alt="Freelance Portfolio" className="h-12 md:h-14 w-auto object-contain" style={{ imageRendering: '-webkit-optimize-contrast' }} />
             </div>
             <div className="hidden sm:block">
-              <div className="font-bold text-white text-base leading-tight">LSP Technologies</div>
-              <div className="text-gray-mid text-xs leading-tight">Inc.</div>
+              <div className="font-bold text-white text-base leading-tight">My Portfolio</div>
+              <div className="text-gray-mid text-xs leading-tight">GHL & Automation Expert</div>
             </div>
           </Link>
 
@@ -158,8 +157,8 @@ const Navbar = () => {
               transition={{ delay: 0.4 }}
               className="p-8 text-gray-mid text-sm"
             >
-              <p>📍 Tillsonburg, Ontario, Canada</p>
-              <p className="mt-1">📧 hello@lsptechnologies.com</p>
+              <p>📍 Available Worldwide (Remote)</p>
+              <p className="mt-1">📧 hello@freelancer.com</p>
             </motion.div>
           </motion.div>
         )}

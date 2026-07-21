@@ -9,16 +9,16 @@ import { motion } from 'framer-motion'
 const ServicesPage = () => (
   <>
     <Helmet>
-      <title>Services — LSP Technologies Inc.</title>
-      <meta name="description" content="Explore LSP Technologies services: software development, web, mobile, ERP, HRMS, AI, cloud, business automation with n8n, and more." />
+      <title>My Services | GHL, N8N, Make, Zapier, WordPress, Shopify & SEO</title>
+      <meta name="description" content="Explore my freelance services: GoHighLevel setup, N8N automation, Make/Zapier workflows, WordPress development, Shopify stores, SEO, and more." />
     </Helmet>
     <div className="pt-20 bg-dark section-padding">
       <div className="container-max text-center">
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-section font-black text-white mb-4">
-          Our Services
+          My Services
         </motion.h1>
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }} className="text-gray-mid text-lg max-w-2xl mx-auto">
-          End-to-end technology solutions designed to grow your business.
+          From GoHighLevel to N8N, Make, Zapier, WordPress, Shopify & SEO — I provide every digital service your business needs to automate, scale, and dominate.
         </motion.p>
       </div>
     </div>

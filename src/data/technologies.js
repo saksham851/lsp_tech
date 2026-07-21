@@ -1,19 +1,19 @@
 // src/data/technologies.js
 export const technologies = [
-  { name: 'React', icon: '⚛️', color: '#61DAFB', category: 'Frontend' },
-  { name: 'Next.js', icon: '▲', color: '#ffffff', category: 'Frontend' },
-  { name: 'TypeScript', icon: 'TS', color: '#3178C6', category: 'Language' },
-  { name: 'Node.js', icon: '🟢', color: '#339933', category: 'Backend' },
-  { name: 'Express', icon: '⚡', color: '#ffffff', category: 'Backend' },
-  { name: 'GraphQL', icon: '◈', color: '#E10098', category: 'API' },
-  { name: 'MongoDB', icon: '🍃', color: '#47A248', category: 'Database' },
-  { name: 'PostgreSQL', icon: '🐘', color: '#336791', category: 'Database' },
-  { name: 'MySQL', icon: '🐬', color: '#4479A1', category: 'Database' },
-  { name: 'AWS', icon: '☁️', color: '#FF9900', category: 'Cloud' },
-  { name: 'Azure', icon: '🔷', color: '#0078D4', category: 'Cloud' },
-  { name: 'Docker', icon: '🐳', color: '#2496ED', category: 'DevOps' },
-  { name: 'Tailwind CSS', icon: '🌊', color: '#06B6D4', category: 'Frontend' },
-  { name: 'n8n', icon: '🔗', color: '#EA4B71', category: 'Automation' },
+  { name: 'GoHighLevel', icon: '⚡', color: '#F9A825', category: 'CRM & Marketing' },
+  { name: 'N8N', icon: '🔗', color: '#EA4B71', category: 'Automation' },
+  { name: 'Make', icon: '🔄', color: '#6D4AFF', category: 'Automation' },
+  { name: 'Zapier', icon: '⚙️', color: '#FF4A00', category: 'Automation' },
+  { name: 'WordPress', icon: '🌐', color: '#21759B', category: 'CMS' },
+  { name: 'WooCommerce', icon: '🛒', color: '#96588A', category: 'eCommerce' },
+  { name: 'Shopify', icon: '🛍️', color: '#95BF47', category: 'eCommerce' },
+  { name: 'Shopify Plus', icon: '💎', color: '#5E8E3E', category: 'eCommerce' },
+  { name: 'SEO', icon: '📈', color: '#34A853', category: 'Marketing' },
+  { name: 'ActiveCampaign', icon: '📧', color: '#356AE6', category: 'Email Marketing' },
+  { name: 'Mailchimp', icon: '🐵', color: '#FFE01B', category: 'Email Marketing' },
+  { name: 'Stripe', icon: '💳', color: '#635BFF', category: 'Payments' },
+  { name: 'ClickFunnels', icon: '🚀', color: '#E8612A', category: 'Funnels' },
+  { name: 'Twilio', icon: '📱', color: '#F22F46', category: 'SMS' },
 ]
 
-export const techCategories = ['All', 'Frontend', 'Backend', 'Database', 'Cloud', 'DevOps', 'Automation']
+export const techCategories = ['All', 'CRM & Marketing', 'Automation', 'CMS', 'eCommerce', 'Email Marketing', 'Marketing', 'Payments', 'Funnels', 'SMS']

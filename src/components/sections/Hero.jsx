@@ -10,22 +10,22 @@ const floatingOrbs = [
 ]
 
 const techBadges = [
-  { name: 'React', emoji: '⚛️' },
-  { name: 'Node.js', emoji: '🟢' },
-  { name: 'AWS', emoji: '☁️' },
-  { name: 'n8n', emoji: '🔗' },
-  { name: 'AI / ML', emoji: '🤖' },
-  { name: 'ERP', emoji: '📊' },
-  { name: 'Mobile Apps', emoji: '📱' },
-  { name: 'TypeScript', emoji: '🔷' },
-  { name: 'PostgreSQL', emoji: '🐘' },
-  { name: 'Docker', emoji: '🐋' },
+  { name: 'GoHighLevel', emoji: '⚡' },
+  { name: 'N8N', emoji: '🔗' },
+  { name: 'Make', emoji: '🔄' },
+  { name: 'Zapier', emoji: '⚙️' },
+  { name: 'WordPress', emoji: '🌐' },
+  { name: 'Shopify', emoji: '🛍️' },
+  { name: 'SEO', emoji: '📈' },
+  { name: 'CRM', emoji: '🤝' },
+  { name: 'Email Marketing', emoji: '📧' },
+  { name: 'Sales Funnels', emoji: '🚀' },
 ]
 
 const stats = [
-  { value: '50+', label: 'Projects Delivered', icon: '🚀' },
-  { value: '100+', label: 'Happy Clients', icon: '🤝' },
-  { value: '10+', label: 'Countries Served', icon: '🌍' },
+  { value: '200+', label: 'GHL Funnels Built', icon: '⚡' },
+  { value: '500+', label: 'Automations Deployed', icon: '🔗' },
+  { value: '50+', label: 'Happy Clients', icon: '🤝' },
   { value: '98%', label: 'Client Satisfaction', icon: '⭐' },
 ]
 
@@ -78,20 +78,20 @@ const Hero = () => {
             >
               <span className="tag">
                 <span className="w-2 h-2 rounded-full bg-brand-red animate-pulse" />
-                🍁 Rooted in Canada. Built for the World.
+                🚀 Freelance GoHighLevel & Automation Expert
               </span>
             </motion.div>
 
             {/* Main Heading */}
             <h1 className="text-hero font-black text-white leading-none tracking-tight mb-6 animate-fade-in">
-              Building{' '}
+              Automate.{' '}
               <span className="relative">
-                <span className="text-gradient-red">Products.</span>
+                <span className="text-gradient-red">Integrate.</span>
               </span>
               <br />
-              Powering{' '}
+              Scale with{' '}
               <span className="relative">
-                <span className="text-gradient-red">Possibilities.</span>
+                <span className="text-gradient-red">Confidence.</span>
                 <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
@@ -103,8 +103,8 @@ const Hero = () => {
 
             {/* Sub Heading */}
             <p className="text-xl md:text-2xl text-white/70 max-w-2xl leading-relaxed mb-10">
-              We help small businesses grow with custom software, web apps, mobile applications,
-              ERP systems, and intelligent workflow automation powered by n8n and AI.
+              I am your go-to freelance expert for <strong className="text-white">GoHighLevel</strong>, N8N, Make, Zapier, WordPress, Shopify & SEO.
+              I build automations and digital systems that grow your business on autopilot.
             </p>
 
             {/* CTA Buttons */}
@@ -117,8 +117,8 @@ const Hero = () => {
               <Link to="/contact" className="btn-primary text-base px-8 py-4">
                 Get Started Free <FiArrowRight size={18} />
               </Link>
-              <Link to="/portfolio" className="btn-outline text-base px-8 py-4">
-                <FiPlay size={16} /> View Our Work
+              <Link to="/services" className="btn-outline text-base px-8 py-4">
+                <FiPlay size={16} /> Explore Services
               </Link>
             </motion.div>
           </div>

@@ -7,32 +7,32 @@ import { FiZap, FiShield, FiUsers, FiGlobe, FiHeart, FiClock } from 'react-icons
 const features = [
   {
     icon: FiZap,
-    title: 'Innovation Driven',
-    description: 'We stay ahead of the curve — adopting AI, automation, and cloud-native technologies before they become mainstream. Your business gets tomorrow\'s tools today.',
+    title: 'GHL Certified Expert',
+    description: 'I am a GoHighLevel power user — from snapshots and funnels to SaaS mode and white-label setups. I know GHL inside out and deliver results fast.',
     gradient: 'from-yellow-500/20 to-orange-500/5',
     iconBg: 'bg-yellow-500/10',
     iconColor: 'text-yellow-400',
   },
   {
     icon: FiShield,
-    title: 'Built for Quality',
-    description: 'Every line of code is reviewed, tested, and deployed with CI/CD pipelines. We don\'t ship until it\'s bulletproof. Your software works when it matters most.',
+    title: 'Automation That Works',
+    description: 'My N8N, Make, and Zapier workflows are built to run 24/7 without breaking. I design for reliability, error handling, and zero manual intervention.',
     gradient: 'from-blue-500/20 to-cyan-500/5',
     iconBg: 'bg-blue-500/10',
     iconColor: 'text-blue-400',
   },
   {
     icon: FiUsers,
-    title: 'Reliable Team',
-    description: 'Senior developers, experienced designers, and certified cloud architects — all under one roof. You get a full team without the overhead of hiring one.',
+    title: 'Direct Communication',
+    description: 'No account managers or junior devs. You work directly with me. This means faster communication, no misaligned expectations, and rapid implementation.',
     gradient: 'from-purple-500/20 to-violet-500/5',
     iconBg: 'bg-purple-500/10',
     iconColor: 'text-purple-400',
   },
   {
     icon: FiGlobe,
-    title: 'Global Solutions',
-    description: 'Proudly Canadian, globally capable. We\'ve delivered projects across North America, Europe, and Asia — bringing world-class expertise to businesses of all sizes.',
+    title: 'Remote & Flexible',
+    description: 'I work with clients across North America, Europe, and Asia — delivering world-class digital services and adapting to your schedule and time zone.',
     gradient: 'from-green-500/20 to-emerald-500/5',
     iconBg: 'bg-green-500/10',
     iconColor: 'text-green-400',
@@ -40,15 +40,15 @@ const features = [
   {
     icon: FiHeart,
     title: 'Client First Always',
-    description: 'We measure success by your results, not just our deliverables. Regular check-ins, transparent communication, and a genuine investment in your growth.',
+    description: 'I measure success by your results, not just my deliverables. Regular check-ins, transparent communication, and a genuine investment in your growth.',
     gradient: 'from-rose-500/20 to-pink-500/5',
     iconBg: 'bg-rose-500/10',
     iconColor: 'text-rose-400',
   },
   {
     icon: FiClock,
-    title: 'On Time. Every Time.',
-    description: 'We use agile sprints and milestone-based delivery to keep projects on track. No missed deadlines, no surprise costs. Just reliable execution.',
+    title: 'Fast Turnaround',
+    description: 'I use agile sprints and milestone-based delivery to keep projects on track. Fast delivery, no missed deadlines, no surprise costs. Just reliable execution.',
     gradient: 'from-brand-red/20 to-orange-500/5',
     iconBg: 'bg-brand-red/10',
     iconColor: 'text-brand-red',
@@ -67,9 +67,9 @@ const WhyChoose = () => {
           animate={inView ? 'visible' : 'hidden'}
         >
           <SectionHeader
-            tag="Why LSP"
-            title="Why Businesses Choose Us"
-            subtitle="From startups to enterprises, we've earned the trust of 100+ clients by delivering real results — not just software."
+            tag="Why Me"
+            title="Why Businesses Choose Me"
+            subtitle="I've earned the trust of 50+ clients by delivering real GHL setups, automation systems, and digital growth — without the agency overhead."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

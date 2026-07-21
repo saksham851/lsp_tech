@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 import { useScrollAnimation, staggerContainer, staggerItem } from '../../hooks/useScrollAnimation'
 
 const stats = [
-  { value: 50, suffix: '+', label: 'Projects Delivered', desc: 'Across web, mobile, ERP & automation', icon: '🚀' },
-  { value: 100, suffix: '+', label: 'Happy Clients', desc: 'From startups to enterprises', icon: '🤝' },
-  { value: 10, suffix: '+', label: 'Countries Served', desc: 'Global reach from Canadian roots', icon: '🌍' },
+  { value: 200, suffix: '+', label: 'GHL Funnels Built', desc: 'High-converting sales systems', icon: '🚀' },
+  { value: 500, suffix: '+', label: 'Automations Deployed', desc: 'Saving clients 1000s of hours', icon: '⚡' },
+  { value: 15, suffix: '+', label: 'Countries Served', desc: 'Global digital reach', icon: '🌍' },
   { value: 98, suffix: '%', label: 'Client Satisfaction', desc: 'Measured through repeat business', icon: '⭐' },
 ]
 
@@ -87,7 +87,7 @@ const Statistics = () => {
               Numbers That Speak For Themselves
             </h2>
             <p className="text-white/70 text-lg">
-              Every metric reflects a real partnership, a real problem solved, a real business transformed.
+              Every metric reflects hours saved, leads generated, and a real business transformed by automation.
             </p>
           </motion.div>
 

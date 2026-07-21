@@ -7,8 +7,8 @@ import { motion } from 'framer-motion'
 const ContactPage = () => (
   <>
     <Helmet>
-      <title>Contact Us — LSP Technologies Inc.</title>
-      <meta name="description" content="Get in touch with LSP Technologies Inc. in Tillsonburg, Ontario. Start your software project today. We respond within 24 hours." />
+      <title>Contact Me | Let's Build Together</title>
+      <meta name="description" content="Get in touch with me. Start your GHL setup, automation workflow, WordPress/Shopify project, or SEO campaign today. I respond within 24 hours." />
     </Helmet>
     <div className="pt-20 bg-dark section-padding">
       <div className="container-max text-center">
@@ -16,7 +16,7 @@ const ContactPage = () => (
           Let's Talk
         </motion.h1>
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }} className="text-gray-mid text-lg max-w-2xl mx-auto">
-          Tell us about your project and we'll help you figure out the best path forward.
+          Tell me about your GHL, automation, WordPress, Shopify, or SEO project and I'll help you figure out the best path forward.
         </motion.p>
       </div>
     </div>

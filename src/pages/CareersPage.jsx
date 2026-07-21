@@ -6,8 +6,8 @@ import { motion } from 'framer-motion'
 const CareersPage = () => (
   <>
     <Helmet>
-      <title>Careers — LSP Technologies Inc.</title>
-      <meta name="description" content="Join the LSP Technologies team. Remote-first positions in software development, design, and business automation. See current openings." />
+      <title>Careers — DevBridge | Join Our Automation & GHL Team</title>
+      <meta name="description" content="Join the DevBridge team. Remote-first positions for GHL specialists, automation experts, WordPress/Shopify developers, and SEO professionals. See current openings." />
     </Helmet>
     <div className="pt-20 bg-dark section-padding">
       <div className="container-max text-center">
@@ -15,7 +15,7 @@ const CareersPage = () => (
           Join Our Team
         </motion.h1>
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }} className="text-gray-mid text-lg max-w-2xl mx-auto">
-          Help us build products that power possibilities for businesses around the world.
+          Help us build automation systems and digital growth solutions for businesses around the world.
         </motion.p>
       </div>
     </div>
