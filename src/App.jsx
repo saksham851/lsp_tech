@@ -1,36 +1,34 @@
-import { lazy, Suspense } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async'
-import Layout from './components/layout/Layout'
-import PageLoader from './components/ui/PageLoader'
-
-// Lazy loaded pages for code splitting
-const Home = lazy(() => import('./pages/Home'))
-const AboutPage = lazy(() => import('./pages/AboutPage'))
-const ServicesPage = lazy(() => import('./pages/ServicesPage'))
-const PortfolioPage = lazy(() => import('./pages/PortfolioPage'))
-const BlogPage = lazy(() => import('./pages/BlogPage'))
-const ContactPage = lazy(() => import('./pages/ContactPage'))
+import React from 'react';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Services from './components/sections/Services';
+import TechStack from './components/sections/TechStack';
+import Projects from './components/sections/Projects';
+import Process from './components/sections/Process';
+import WhyWorkWithMe from './components/sections/WhyWorkWithMe';
+import FAQ from './components/sections/FAQ';
+import Contact from './components/sections/Contact';
 
 function App() {
   return (
-    <HelmetProvider>
-      <Router>
-        <Suspense fallback={<PageLoader />}>
-          <Layout>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/services" element={<ServicesPage />} />
-              <Route path="/portfolio" element={<PortfolioPage />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-            </Routes>
-          </Layout>
-        </Suspense>
-      </Router>
-    </HelmetProvider>
-  )
+    <div className="bg-dark text-white min-h-screen selection:bg-white/20">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <TechStack />
+        <Projects />
+        <Process />
+        <WhyWorkWithMe />
+        <FAQ />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

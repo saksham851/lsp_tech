@@ -1,83 +1,84 @@
-// src/components/sections/FAQ.jsx
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useScrollAnimation, staggerContainer, staggerItem } from '../../hooks/useScrollAnimation'
-import SectionHeader from '../ui/SectionHeader'
-import { faqs } from '../../data/faqs'
-import { FiPlus, FiMinus } from 'react-icons/fi'
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-const FAQItem = ({ faq, isOpen, onToggle }) => (
-  <motion.div
-    variants={staggerItem}
-    className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
-      isOpen ? 'border-brand-red/30 bg-brand-red/5' : 'border-dark-border bg-dark-card hover:border-white/10'
-    }`}
-  >
-    <button
-      onClick={onToggle}
-      className="w-full flex items-center justify-between gap-4 p-6 text-left"
-    >
-      <span className={`font-semibold text-base transition-colors ${isOpen ? 'text-white' : 'text-white/80'}`}>
-        {faq.question}
-      </span>
-      <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-        isOpen ? 'bg-brand-red text-white rotate-0' : 'glass text-gray-mid'
-      }`}>
-        {isOpen ? <FiMinus size={16} /> : <FiPlus size={16} />}
-      </div>
-    </button>
-
-    <AnimatePresence initial={false}>
-      {isOpen && (
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ height: 'auto', opacity: 1 }}
-          exit={{ height: 0, opacity: 0 }}
-          transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <div className="px-6 pb-6 text-gray-mid text-sm leading-relaxed border-t border-white/5 pt-4">
-            {faq.answer}
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  </motion.div>
-)
+const faqs = [
+  {
+    q: "Do you only work with startups?",
+    a: "No, I work with a variety of clients including established businesses, agencies looking for freelance help, and ecommerce brands. However, my agile process is especially beneficial for startups."
+  },
+  {
+    q: "How do you charge for projects?",
+    a: "It depends on the project scope. I typically offer flat-rate pricing for clear deliverables (like a landing page or standard app), and hourly/retainer rates for ongoing development and support."
+  },
+  {
+    q: "Can you help me redesign my existing application?",
+    a: "Yes! A large part of my work involves auditing existing codebases, improving UI/UX, and refactoring applications to perform better and look modern."
+  },
+  {
+    q: "Do you provide ongoing support after launch?",
+    a: "Absolutely. I offer monthly retainer packages to ensure your application stays updated, secure, and continues to evolve with your business needs."
+  }
+];
 
 const FAQ = () => {
-  const { ref, inView } = useScrollAnimation()
-  const [openId, setOpenId] = useState(1)
+  const [openIdx, setOpenIdx] = useState(null);
 
-  const toggle = (id) => setOpenId(openId === id ? null : id)
+  const toggleFaq = (idx) => {
+    setOpenIdx(openIdx === idx ? null : idx);
+  };
 
   return (
-    <section id="faq" className="section-padding bg-dark">
-      <div className="container-max" ref={ref}>
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
+    <section id="faq" className="section-padding bg-black border-t border-white/5">
+      <div className="container-max max-w-3xl">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-16"
         >
-          <SectionHeader
-            tag="FAQ"
-            title="Frequently Asked Questions"
-            subtitle="Everything you need to know before starting a project with me."
-          />
-
-          <div className="max-w-3xl mx-auto space-y-3">
-            {faqs.map(faq => (
-              <FAQItem
-                key={faq.id}
-                faq={faq}
-                isOpen={openId === faq.id}
-                onToggle={() => toggle(faq.id)}
-              />
-            ))}
-          </div>
+          <h2 className="text-section font-bold tracking-tight mb-4">Common Questions</h2>
         </motion.div>
+
+        <div className="flex flex-col gap-4">
+          {faqs.map((faq, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="glass border border-white/5 rounded-2xl overflow-hidden"
+            >
+              <button 
+                onClick={() => toggleFaq(idx)}
+                className="w-full text-left p-6 flex items-center justify-between gap-4 focus:outline-none"
+              >
+                <span className="font-medium text-lg">{faq.q}</span>
+                <span className={`text-white/50 transition-transform duration-300 ${openIdx === idx ? 'rotate-180' : ''}`}>
+                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </button>
+              
+              <AnimatePresence>
+                {openIdx === idx && (
+                  <motion.div 
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    className="px-6 pb-6 text-white/50 leading-relaxed text-sm"
+                  >
+                    {faq.a}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQ
+export default FAQ;
